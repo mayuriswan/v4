@@ -23,7 +23,9 @@ jobs:
 
       - name: npm install, build, and test
         run: |
-          npm install 
+          yarn why "@graphql-tools/utils"
+          yarn cache clean
+          yarn install
           npm run build 
           npm run serve
 
