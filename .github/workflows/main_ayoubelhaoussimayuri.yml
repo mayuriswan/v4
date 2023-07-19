@@ -28,7 +28,6 @@ jobs:
           yarn cache clean
           yarn install
           npm run build 
-          npm run serve
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
