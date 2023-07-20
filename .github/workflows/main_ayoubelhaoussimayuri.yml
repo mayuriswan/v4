@@ -23,6 +23,7 @@ jobs:
 
       - name: npm install, build, and test
         run: |
+          yarn add gatsby
           npm cache clean --force
           yarn why "@graphql-tools/utils"
           yarn cache clean
